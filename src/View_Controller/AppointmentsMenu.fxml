@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="566.0" prefWidth="1271.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AppointmentsMenuController">
+   <children>
+      <Text layoutX="541.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments Menu" wrappingWidth="189.205078125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="AppointmentsTableView" layoutX="40.0" layoutY="125.0" prefHeight="333.0" prefWidth="1191.0">
+        <columns>
+          <TableColumn fx:id="AppointmentIDCol" prefWidth="150.0" text="Appointment ID" />
+          <TableColumn fx:id="CustomerIDCol" minWidth="0.0" prefWidth="118.0" text="Customer ID" />
+            <TableColumn fx:id="TitleCol" minWidth="0.0" text="Title" />
+            <TableColumn fx:id="DescriptionCol" prefWidth="170.0" text="Description" />
+            <TableColumn fx:id="LocationCol" prefWidth="87.0" text="Location" />
+            <TableColumn fx:id="ContactCol" prefWidth="98.0" text="Contact" />
+            <TableColumn fx:id="TypeCol" prefWidth="136.0" text="Type" />
+            <TableColumn fx:id="StartCol" prefWidth="164.0" text="Start" />
+            <TableColumn fx:id="EndCol" prefWidth="187.0" text="End" />
+        </columns>
+      </TableView>
+      <Button fx:id="AppointmentMenuAddButton" layoutX="40.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleAppointmentMenuAddButton" prefHeight="27.0" prefWidth="70.0" text="Add" />
+      <Button fx:id="AppointmentsMenuDeleteButton" layoutX="178.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleAppointmentsMenuDeleteButton" text="Delete" />
+      <Button fx:id="AppointmentsMenuModifyButton" layoutX="112.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleAppointmentsMenuModifyButton" text="Modify" />
+      <Button fx:id="AppointmentsMenuReturnButton" layoutX="40.0" layoutY="503.0" mnemonicParsing="false" onAction="#handleAppointmentsMenuReturnButton" prefHeight="27.0" prefWidth="98.0" text="Main Menu" />
+      <Group layoutX="38.0" layoutY="25.0">
+         <children>
+            <RadioButton fx:id="AppointmentsMenuWeeklyView" layoutX="1.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleAppointmentsMenuWeeklyView" text="Weekly View" />
+            <RadioButton fx:id="AppointmentsMenuMonthlyView" layoutX="1.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleAppointmentsMenuMonthlyView" text="Monthly View" />
+            <RadioButton fx:id="AppointmentsMenuDailyView" layoutX="1.0" mnemonicParsing="false" onAction="#handleAppointmentsMenuDailyView" text="Daily View" />
+            <RadioButton fx:id="AppointmentsMenuAllAppointmentsButton" layoutY="75.0" mnemonicParsing="false" onAction="#handleAllAppointments" text="All Appointments" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

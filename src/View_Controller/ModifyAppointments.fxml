@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="550.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/11.0.3-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyAppointmentsController">
+    <children>
+        <TextField fx:id="ModAppointmentIDField" editable="false" layoutX="148.0" layoutY="63.0" />
+        <TextField fx:id="ModAppointmentTitleField" layoutX="148.0" layoutY="136.0" />
+        <TextField fx:id="ModAppointmentDescriptionField" layoutX="148.0" layoutY="174.0" />
+        <TextField fx:id="ModAppointmentLocationField" layoutX="148.0" layoutY="210.0" />
+        <TextField fx:id="ModAppointmentTypeField" layoutX="148.0" layoutY="286.0" />
+        <Text layoutX="131.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Appointment" wrappingWidth="143.205078125" />
+        <Text layoutX="27.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment ID" />
+        <Text layoutX="60.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+        <Text layoutX="37.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+        <Text layoutX="50.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+        <Text layoutX="54.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" />
+        <Text layoutX="65.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+        <Text layoutX="41.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
+        <Text layoutX="41.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time" />
+        <Text layoutX="49.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" />
+        <Text layoutX="50.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time" />
+        <Text layoutX="52.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" />
+        <Button fx:id="ModAppointmentSaveButton" layoutX="29.0" layoutY="498.0" mnemonicParsing="false" onAction="#handleModAppointmentSaveButton" text="Save" />
+        <Button fx:id="ModAppointmentCancelButton" layoutX="87.0" layoutY="498.0" mnemonicParsing="false" onAction="#handleModAppointmentCancelButton" text="Cancel" />
+        <ComboBox fx:id="ModAppointmentStartTimeCombo" layoutX="148.0" layoutY="353.0" prefHeight="27.0" prefWidth="110.0" />
+        <ComboBox fx:id="ModAppointmentEndTimeCombo" layoutX="148.0" layoutY="420.0" prefHeight="27.0" prefWidth="110.0" />
+        <DatePicker fx:id="ModAppointmentStartDatePicker" layoutX="148.0" layoutY="320.0" prefHeight="27.0" prefWidth="110.0" />
+        <DatePicker fx:id="ModAppointmentEndDatePicker" layoutX="148.0" layoutY="386.0" prefHeight="27.0" prefWidth="110.0" />
+        <ComboBox fx:id="ModAppointmentCustomerIDCombo" layoutX="148.0" layoutY="99.0" onAction="#handleSelectedCustomer" prefHeight="27.0" prefWidth="110.0" />
+        <ComboBox fx:id="ModAppointmentContactCombo" layoutX="148.0" layoutY="251.0" onAction="#handleSelectedContact" prefHeight="27.0" prefWidth="110.0" />
+        <Text layoutX="63.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
+        <ComboBox fx:id="ModAppointmentUserCombo" layoutX="148.0" layoutY="458.0" onAction="#handleSelectedUser" prefHeight="27.0" prefWidth="110.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="148.0" prefWidth="182.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ReportOneController">
+   <children>
+      <ComboBox fx:id="SelectMonthCombo" layoutX="16.0" layoutY="40.0" prefWidth="150.0" promptText="Select Month" />
+      <Button fx:id="ReportOneSubmitButton" layoutX="16.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleSubmitReport" text="Submit" />
+      <Button fx:id="ReportOneReturnButton" layoutX="91.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleReturnButton" text="Return" />
+   </children>
+</AnchorPane>

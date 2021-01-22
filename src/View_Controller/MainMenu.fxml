@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainMenuController">
+   <children>
+      <Text layoutX="117.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Menu" wrappingWidth="119.21142578125">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="MainMenuCustomersButton" layoutX="121.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleMainMenuCustomersButton" prefHeight="27.0" prefWidth="112.0" text="Customers" />
+      <Button fx:id="MainMenuAppointmentsButton" layoutX="121.0" layoutY="104.0" mnemonicParsing="false" onAction="#handleMainMenuAppointmentsButton" text="Appointments" />
+      <Button fx:id="MainMenuReportsButton" layoutX="121.0" layoutY="141.0" mnemonicParsing="false" onAction="#handleMainMenuReportsButton" prefHeight="32.0" prefWidth="112.0" text="Reports" />
+      <Button fx:id="MainMenuExitButton" layoutX="121.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleMainMenuExitButton" prefHeight="32.0" prefWidth="112.0" text="Exit" />
+   </children>
+</AnchorPane>

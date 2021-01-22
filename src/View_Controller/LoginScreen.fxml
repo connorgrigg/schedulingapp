@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.LoginScreenController">
+   <children>
+      <Text fx:id="LoginText" layoutX="62.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="LoginScreenUserField" layoutX="195.0" layoutY="66.0" promptText="Username" />
+      <Text fx:id="UsernameText" layoutX="33.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="LoginScreenPasswordField" layoutX="195.0" layoutY="103.0" promptText="Password" />
+      <Text fx:id="PasswordText" layoutX="33.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="LoginScreenLoginButton" layoutX="195.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleLoginScreenLoginButton" text="Login" />
+      <Text fx:id="ZoneIDText" layoutX="14.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zone: " wrappingWidth="75.0" />
+      <Text fx:id="ZoneIDZone" layoutX="85.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

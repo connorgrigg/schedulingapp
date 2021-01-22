@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="555.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.CustomersMenuController">
+   <children>
+      <Text layoutX="334.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Menu" wrappingWidth="190.205078125">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TableView fx:id="CustomerTable" layoutX="38.0" layoutY="130.0" prefHeight="295.0" prefWidth="783.0">
+        <columns>
+          <TableColumn fx:id="CustomerIDCol" prefWidth="134.0" text="ID" />
+            <TableColumn fx:id="CustomerNameCol" prefWidth="230.0" text="Name" />
+            <TableColumn fx:id="CustomerCountryCol" prefWidth="192.0" text="Country" />
+            <TableColumn fx:id="CustomerPhoneCol" prefWidth="226.0" text="Phone" />
+        </columns>
+      </TableView>
+      <Button fx:id="CustomerMenuAddButton" layoutX="38.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleCustomerMenuAddButton" prefHeight="27.0" prefWidth="65.0" text="Add" />
+      <Button fx:id="CustomerMenuModifyButton" layoutX="113.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleCustomerMenuModifyButton" text="Modify" />
+      <Button fx:id="CustomerMenuDeleteButton" layoutX="185.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleCustomerMenuDeleteButton" text="Delete" />
+      <Button fx:id="CustomerMenuReturnButton" layoutX="38.0" layoutY="491.0" mnemonicParsing="false" onAction="#handleCustomerMenuReturnButton" text="Main Menu" />
+   </children>
+</AnchorPane>

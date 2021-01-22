@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="295.0" prefWidth="195.0" xmlns="http://javafx.com/javafx/11.0.3-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ReportsController">
+   <children>
+      <Text layoutX="70.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" />
+      <Group layoutX="22.0" layoutY="76.0">
+         <children>
+            <Button fx:id="AppointmentCountButton" mnemonicParsing="false" onAction="#handleAppointmentCount" text="Appointment Count" />
+            <Button fx:id="ContactScheduleButton" layoutX="4.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleContactSchedule" text="Contact Schedule" />
+            <Button fx:id="CustomerCountButton" layoutX="11.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleCustomerCount" text="Customer Count" />
+            <Button fx:id="ReturnMainMenuButton" layoutX="30.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleReturnMainMenu" text="Main Menu" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
